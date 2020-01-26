@@ -1,10 +1,5 @@
 
 
-
-
-#%%
-
-
 price = 1000000
 has_good_credit = True
 if has_good_credit:
@@ -63,7 +58,7 @@ while guess_count < guess_limit:
 else:
     print("Sorry you lost1!")
  
-    
+#%%    
 command = ""
 while command.upper != "quit": 
      command =input("> ")
@@ -82,16 +77,143 @@ quit - to quit
      else:
          print("sorry, I dont understand that command")
          
+#%% 
+
+for item in range(5, 10):
+    print(item)
     
+#%%
+    prices = [10, 20, 30]
+    
+    total = 0
+    for price in prices:
+        total += price
+    print(f"Total: {total}")
+           
+    
+#%%
+   
+    for x in range(4):
+        for y in range(3):
+            print(f'({x}, {y})')
+#%%
+            numbers = [5, 2, 5, 2, 2]
+            
+            for item in numbers: 
+                print('x' * item)
+                
+#%%
+                names =[ 'John', 'Bob', 'Mosh', 'Sarah', 'Mary']
+                names[0] = 'Jon'
+                print(names[0:])
+                print(names)
+                
+#%%  #finding max number in list
+                
+                numbers = [3, 6, 2, 8, 10]
+                max = numbers[0]
+                for number in numbers:
+                    if number > max:
+                        max = number
+                print(max)
+            
+            
+#%% #2D list
+    
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print(matrix[0][1])
+
+
+#%%
+
+numbers = [5, 2, 1, 7, 4]
+numbers.pop()
+print(numbers)
+
+
+#%%
+ #Tuples
+numbers = (1, 2, 3)
+print(numbers[0])
     
 
 
+#%%
+ 
+ #unpacking #tuples #lists
+ 
+coordinates =[1, 2, 3]
+x, y, z = coordinates
+print(z)
+ 
+ #%%
+ #Dictionaires in Python
+
+customer = {
+    "name": "John Smith",
+    "age": 30,
+    "is_verified": True
+}
+customer["birthdate"] = "April 25 1990"
+print(customer["birthdate"])
+ 
+#%%
+
+phone = input("Phone: ")
+digits_mapping = {
+    "1": "one", 
+    "2": "two",
+    "3": "three",
+    "4": "four"
+}
+output = ""
+for ch in phone:
+    output += digits_mapping.get(ch, "!") + " "
+print(output)
+
+#%%
+#emojis
+
+message = input(">")
+words = message.split(' ')
+emojis = {
+    ":)": "😁",
+    ":(": "🙁"
+}
+output = ""
+for word in words:
+    output += emojis.get(word, word) + " "
+    print(output)
     
+#%% #functions
+
+def greet_user(): 
+    print('Hi there!')
+    print('Welcome aboard')
+
+
+print("Start")
+greet_user
+print("Finish")
+
+#%% #Parameters
+
+def greet_user(name): 
+    print(f'Hi {name}!')
+    print('Welcome aboard')
+
+
+print("Start")
+greet_user("John")
+print("Finish")
+
+
     
-
-
-
-
 
 
 
